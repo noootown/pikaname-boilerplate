@@ -1,0 +1,23 @@
+{
+  "name": "@pikaname/service",
+  "version": "0.0.0",
+  "private": true,
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc -w",
+    "list": "tsc --listFiles"
+  },
+  "dependencies": {
+    "@types/ramda": "0.25.24",
+    "@types/react": "16.9.3",
+    "@types/react-dom": "16.9.1",
+    "express": "^4.17.1",
+    "ramda": "^0.26.1",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-ga": "^2.6.0",
+    "typescript": "3.2.2"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": [
+      "./packages/*/tsconfig.json"
+    ]
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "typescript",
+    "eslint-plugin-typescript"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "standard-with-typescript",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "semi": ["error", "never"],
+    "@typescript-eslint/semi": ["error", "never"],
+    "camelcase": "off",
+    "no-var": "error",
+    "max-len": ["error", { "code": 140 }],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "ignore"
+      }
+    ],
+    "no-trailing-spaces": [ "error" ],
+    "no-console": "off",
+    "quotes": ["error", "single"],
+    "quote-props": ["error", "as-needed"],
+    "class-methods-use-this": [
+      "off",
+      "allow class methods with no usage of 'this'"
+    ],
+    "import/no-named-as-default-member": ["off"]
+  }
+}
